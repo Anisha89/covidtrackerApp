@@ -1,0 +1,43 @@
+
+<div [ngStyle] = "{'background-color':'gray'}" class ="row"  >
+    <div  class ="card col p-1 m-1">
+      <div class="ui statistic">
+          <div  [ngStyle] = "{'color':'blue'}" class="label">
+           <h3>Confirmed</h3>
+          </div>
+          <div [ngStyle] = "{'color':'brown'}"class="value">
+            {{ totalconfirmed }}
+          </div>
+        </div>
+    </div>
+    <div class ="card col p-1 m-1">
+      <div class="ui statistic">
+          <div  [ngStyle] = "{'color':'blue'}"class="label">
+              <h3>Active</h3>
+          </div>
+          <div [ngStyle] = "{'color':'orange'}" class="value">
+            {{ totalactive }}
+          </div>
+        </div>
+    </div>
+    <div  class ="card col p-1 m-1">
+      <div class="ui statistic">
+          <div  [ngStyle] = "{'color':'blue'}" class="label">
+           <h3>Recovered</h3> 
+          </div>
+          <div [ngStyle] = "{'color':'green'}"class="value">
+            {{totalrecovered}}
+          </div>
+        </div>
+    </div>
+    <div class ="card col p-1 m-1">
+      <div class="ui statistic">
+          <div [ngStyle] = "{'color':'blue'}" class="label">
+            <h3>deaths</h3>
+          </div>
+          <div [ngStyle] = "{'color':'red'}" class="value">
+            {{totaldeaths}}
+          </div>
+        </div>
+    </div>
+</div>

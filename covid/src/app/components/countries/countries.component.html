@@ -1,0 +1,21 @@
+
+
+<div class="jumbotron bg-white">
+    
+    <h1 class ="display-4">Covid Tracker</h1>
+    <hr>
+    <div class="mxauto">
+    <div class="form-group col-lg-5 mx-auto">
+        <label for="Country">Select Country</label>
+        <select name="  " class ="form-control" id="c" #input (change)='updatevalues(input.value)'> 
+            <option value="{{country}}" *ngFor='let country of countries' >{{country}}</option>
+        </select>
+    </div>
+    
+</div>
+
+<app-dashboard-card [totalconfirmed]='totalconfirmed' [totalactive]='totalactive'
+[totalrecovered]='totalrecovered' [totaldeaths]='totaldeaths'
+></app-dashboard-card>
+</div>
+
